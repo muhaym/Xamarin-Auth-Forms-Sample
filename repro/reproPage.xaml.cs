@@ -18,7 +18,7 @@ namespace repro
         }
         async void Twitter_Clicked(object sender, System.EventArgs e)
         {
-            var res = await social.LoginAsync(AuthProviders.Twitter);
+            var res = await social.LoginAsync(AuthProviders.Twitter, false);
             if (res != null)
             {
             }
