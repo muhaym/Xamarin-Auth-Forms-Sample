@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:repro" x:Class="repro.reproPage">
+    <StackLayout>
+        <Button Text="Facebook" Clicked="Facebook_Clicked"/>
+        <Button Text="Linkedin" Clicked="Linkedin_Clicked"/>
+        <Button Text="Google" Clicked="Google_Clicked"/>
+        <Button Text="Twitter" Clicked="Twitter_Clicked"/>
+    </StackLayout>
+</ContentPage>
