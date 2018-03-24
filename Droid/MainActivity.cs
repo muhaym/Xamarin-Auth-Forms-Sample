@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Xamarin.Auth.Presenters.XamarinAndroid;
+using Plugin.CurrentActivity;
 
 namespace repro.Droid
 {
@@ -22,6 +23,7 @@ namespace repro.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            CrossCurrentActivity.Current.Activity = this;
             AuthenticationConfiguration.Init(this, bundle);
 
             LoadApplication(new App());

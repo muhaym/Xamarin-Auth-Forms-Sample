@@ -158,7 +158,7 @@ namespace repro
                     isUsingNativeUI: native_ui
                 )
                 {
-                    AllowCancel = true,
+                    AllowCancel = false,
                     ShowErrors = false
                 };
             return authenticator;
@@ -176,7 +176,7 @@ namespace repro
                 callbackUrl: new Uri("https://mobile.twitter.com/")
             );
             authenticator.ShowErrors = false;
-            authenticator.AllowCancel = true;
+            authenticator.AllowCancel = false;
             return authenticator;
         }
 
@@ -193,7 +193,7 @@ namespace repro
                 isUsingNativeUI: native_ui
             )
             {
-                AllowCancel = true,
+                AllowCancel = false,
                 ShowErrors = false
             };
             return authenticator;
@@ -257,7 +257,7 @@ namespace repro
                 )
                 {
                     ShowErrors = false,
-                    AllowCancel = true
+                    AllowCancel = false
                 };
             return authenticator;
         }
